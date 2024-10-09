@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view />  <!-- Renderiza o componente com base na rota -->
+    <router-view />  
   </div>
 </template>
 

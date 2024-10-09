@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import ConteudoDetalhe from '@/components/ConteudoDetalhe.vue';
+import BuscaAvancada from '@/components/BuscaAvancada.vue';
+import CarouselDestaque from '@/components/CarouselDestaque.vue';
 
 const routes = [
   {
@@ -7,6 +9,16 @@ const routes = [
     name: 'ConteudoDetalhe',
     component: ConteudoDetalhe,
     props: true,
+  }, {
+    path: '/busca-avancada',
+    name: 'BuscaAvancada',
+    component: BuscaAvancada, 
+  },
+
+  {
+    path: '/carousel-destaque',
+    name: 'CarouselDestque',
+    component: CarouselDestaque, 
   }
 ];
 

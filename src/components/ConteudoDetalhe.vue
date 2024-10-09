@@ -2,6 +2,7 @@
   <div v-if="conteudo">
     <!-- Exibe o título -->
     <h1>{{ conteudo.attributes.titulo }}</h1>
+    <h4>{{ conteudo.attributes.subtitulo }}</h4>
 
     <!-- Exibe o texto -->
     <div v-if="conteudo.attributes.texto && conteudo.attributes.texto.length">
@@ -34,7 +35,7 @@
 
     <!-- Exibe as categorias -->
     <div v-if="conteudo.attributes.categorias && conteudo.attributes.categorias.data && conteudo.attributes.categorias.data.length">
-      <h3>Categorias:</h3>
+      <h3>Tipos de Conteúdp:</h3>
       <ul>
         <li v-for="categoria in conteudo.attributes.categorias.data" :key="categoria.id">
           {{ categoria.attributes.Categoria }}
@@ -47,7 +48,7 @@
       <h3>Tags:</h3>
       <ul>
         <li v-for="tag in conteudo.attributes.tags.data" :key="tag.id">
-          {{ tag.attributes.Tag }}
+          {{ tag.attributes.name }}
         </li>
       </ul>
     </div>
